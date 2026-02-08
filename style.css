@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.primary {
+  background: linear-gradient(45deg, #00ffcc, #00ccff);
+  color: #000;
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.hero-illustration .avatar {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00ffcc, #8a2be2);
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section.dark {
+  background: rgba(0,0,0,0.3);
+}
+
+.section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.15);
+}
+
+.timeline span {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.project h3 {
+  margin-bottom: 15px;
+}
+
+.small {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+.faq p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.community {
+  margin-bottom: 30px;
+}
+
+.newsletter input {
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 10px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  opacity: 0.7;
+}

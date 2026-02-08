@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStart - Comece sua Jornada na Programação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="code-symbol">&lt;/&gt;</span>
+                <span class="logo-text">CodeStart</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#languages" class="nav-link">Linguagens</a></li>
+                <li><a href="#tools" class="nav-link">Ferramentas</a></li>
+                <li><a href="#courses" class="nav-link">Cursos</a></li>
+                <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="#resources" class="nav-link">Recursos</a></li>
+                <li><a href="#community" class="nav-link">Comunidade</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Transforme</span> suas ideias em
+                <span class="gradient-text">código</span>
+            </h1>
+            <p class="hero-subtitle">Aprenda a programar do zero com as melhores ferramentas e recursos. Sua jornada começa aqui!</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Começar Agora</button>
+                <button class="btn btn-secondary">Explorar Cursos</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50000">0</span>
+                    <span class="stat-label">Estudantes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-label">Aulas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Linguagens</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="code-keyword">function</span> <span class="code-function">iniciarJornada</span>() {
+    <span class="code-keyword">const</span> <span class="code-variable">sonho</span> = <span class="code-string">"programador"</span>;
+    <span class="code-keyword">let</span> <span class="code-variable">dedicacao</span> = <span class="code-number">100</span>;
+    
+    <span class="code-keyword">while</span> (<span class="code-variable">dedicacao</span> > <span class="code-number">0</span>) {
+        <span class="code-function">aprender</span>();
+        <span class="code-function">praticar</span>();
+        <span class="code-function">evoluir</span>();
+    }
+    
+    <span class="code-keyword">return</span> <span class="code-string">"Sucesso!"</span>;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages" class="languages">
+        <div class="container">
+            <h2 class="section-title">Escolha sua <span class="gradient-text">Linguagem</span></h2>
+            <p class="section-subtitle">Explore as linguagens mais populares e descubra qual se encaixa melhor no seu objetivo</p>
+            
+            <div class="languages-grid">
+                <div class="language-card" data-color="#f7df1e" data-lang="javascript">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Linguagem essencial para web development. Crie sites interativos e aplicações modernas.</p>
+                    <div class="card-tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">Frontend</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <button class="card-btn" onclick="openLanguageModal('javascript')">Explorar</button>
+                </div>
+
+                <div class="language-card" data-color="#3776ab" data-lang="python">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Perfeita para iniciantes. Sintaxe simples e versátil para IA, dados e automação.</p>
+                    <div class="card-tags">
+                        <span class="tag">IA</span>
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <button class="card-btn" onclick="openLanguageModal('python')">Explorar</button>
+                </div>
+
+                <div class="language-card" data-color="#e34f26" data-lang="html">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                        </svg>
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>A base de toda página web. Aprenda a criar e estilizar sites incríveis.</p>
+                    <div class="card-tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">Design</span>
+                        <span class="tag">Frontend</span>
+                    </div>
+                    <button class="card-btn" onclick="openLanguageModal('html')">Explorar</button>
+                </div>
+
+                <div class="language-card" data-color="#007acc" data-lang="typescript">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
+                        </svg>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>JavaScript com superpoderes. Adicione tipagem e escale suas aplicações.</p>
+                    <div class="card-tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">Frontend</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <button class="card-btn" onclick="openLanguageModal('typescript')">Explorar</button>
+                </div>
+
+                <div class="language-card" data-color="#61dafb" data-lang="react">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+                        </svg>
+                    </div>
+                    <h3>React</h3>
+                    <p>Biblioteca JavaScript mais popular. Construa interfaces de usuário modernas.</p>
+                    <div class="card-tags">
+                        <span class="tag">Frontend</span>
+                        <span class="tag">UI</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                    <button class="card-btn" onclick="openLanguageModal('react')">Explorar</button>
+                </div>
+
+                <div class="language-card" data-color="#b07219" data-lang="java">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/>
+                        </svg>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Linguagem robusta e enterprise. Ideal para aplicações corporativas e Android.</p>
+                    <div class="card-tags">
+                        <span class="tag">Backend</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">Enterprise</span>
+                    </div>
+                    <button class="card-btn" onclick="openLanguageModal('java')">Explorar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Ferramentas <span class="gradient-text">Essenciais</span></h2>
+            <p class="section-subtitle">Escolha as melhores ferramentas para começar a programar hoje mesmo</p>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon vscode">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                            </svg>
+                        </div>
+                        <h3>Visual Studio Code</h3>
+                    </div>
+                    <p class="tool-description">O editor de código mais popular do mundo. Leve, rápido e com milhares de extensões.</p>
+                    <ul class="tool-features">
+                        <li>IntelliSense e autocomplete</li>
+                        <li>Debug integrado</li>
+                        <li>Git embutido</li>
+                        <li>Extensões para todas as linguagens</li>
+                    </ul>
+                    <div class="tool-footer">
+                        <span class="tool-tag">Gratuito</span>
+                        <span class="tool-tag">Windows/Mac/Linux</span>
+                    </div>
+                    <a href="https://code.visualstudio.com/" target="_blank" class="tool-btn">Download</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon pycharm">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.833 6.666v-.055c0-1-.667-1.5-1.778-1.5H4.389v3.055h1.723c1.111 0 1.721-.666 1.721-1.5zM0 0v24h24V0H0zm2.223 3.167h4c2.389 0 3.833 1.389 3.833 3.445v.055c0 2.278-1.778 3.5-4.001 3.5H4.389v2.945H2.223V3.167zM11.277 21h-9v-1.5h9V21zm4.779-8.777c-2.944.055-5.111-2.223-5.111-5.057C10.944 4.557 13 2.277 15.888 2.222c1.556-.027 2.778.5 3.445 1.167l-1.5 1.5c-.445-.445-1.056-.777-1.889-.777-1.556 0-2.556 1.333-2.556 2.833 0 1.555 1 2.833 2.556 2.833.833 0 1.5-.332 2-.833l1.5 1.389c-.889.889-2.111 1.5-3.667 1.5z"/>
+                            </svg>
+                        </div>
+                        <h3>PyCharm</h3>
+                    </div>
+                    <p class="tool-description">IDE completa para Python com ferramentas avançadas de desenvolvimento e debugging.</p>
+                    <ul class="tool-features">
+                        <li>Autocompletar inteligente</li>
+                        <li>Refatoração de código</li>
+                        <li>Testes integrados</li>
+                        <li>Suporte para frameworks (Django, Flask)</li>
+                    </ul>
+                    <div class="tool-footer">
+                        <span class="tool-tag">Gratuito/Pago</span>
+                        <span class="tool-tag">Windows/Mac/Linux</span>
+                    </div>
+                    <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="tool-btn">Download</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon github">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </div>
+                        <h3>GitHub</h3>
+                    </div>
+                    <p class="tool-description">Plataforma essencial para versionamento de código e colaboração com outros desenvolvedores.</p>
+                    <ul class="tool-features">
+                        <li>Controle de versão com Git</li>
+                        <li>Portfólio de projetos</li>
+                        <li>Colaboração em equipe</li>
+                        <li>GitHub Actions (CI/CD)</li>
+                    </ul>
+                    <div class="tool-footer">
+                        <span class="tool-tag">Gratuito</span>
+                        <span class="tool-tag">Web/Desktop</span>
+                    </div>
+                    <a href="https://github.com/" target="_blank" class="tool-btn">Criar Conta</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon figma">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/>
+                            </svg>
+                        </div>
+                        <h3>Figma</h3>
+                    </div>
+                    <p class="tool-description">Ferramenta de design para criar protótipos e interfaces antes de programar.</p>
+                    <ul class="tool-features">
+                        <li>Design de interfaces (UI/UX)</li>
+                        <li>Prototipagem interativa</li>
+                        <li>Colaboração em tempo real</li>
+                        <li>Exportar CSS e assets</li>
+                    </ul>
+                    <div class="tool-footer">
+                        <span class="tool-tag">Gratuito/Pago</span>
+                        <span class="tool-tag">Web/Desktop</span>
+                    </div>
+                    <a href="https://www.figma.com/" target="_blank" class="tool-btn">Começar</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon postman">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-4.863 4.861l4.44-4.44a.62.62 0 1 1 .847.903l-4.699 4.125-.588-.588zm.33.694l-1.1.238a.06.06 0 0 1-.067-.032.06.06 0 0 1 .01-.073l.645-.645.512.512zm-2.803-.459l1.172-1.172.879.878-1.979.426a.074.074 0 0 1-.085-.039.072.072 0 0 1 .013-.093zm-3.646 6.058a.076.076 0 0 1-.069-.083.077.077 0 0 1 .022-.046h.002l.946-.946 1.222 1.222-2.123-.147zm2.425-1.256a.228.228 0 0 0-.117.256l.203.865a.125.125 0 0 1-.211.117h-.003l-.934-.934-.294-.295 3.762-3.758 1.82-.393.874.874c-1.255 1.102-2.971 2.201-5.1 3.268zm5.279-3.428h-.002l-.839-.839 4.699-4.125a.952.952 0 0 0 .119-.127c-.148 1.345-2.029 3.245-3.977 5.091zm3.657-6.46l-.003-.002a1.822 1.822 0 0 1 2.459-2.684l-1.61 1.613a.119.119 0 0 0 0 .169l1.247 1.247a1.817 1.817 0 0 1-2.093-.343zm2.578 0a1.714 1.714 0 0 1-.271.218h-.001l-1.207-1.207 1.533-1.533c.661.72.637 1.832-.054 2.522zM18.855 6.05a.143.143 0 0 0-.053.157.416.416 0 0 1-.053.45.14.14 0 0 0 .023.197.141.141 0 0 0 .084.03.14.14 0 0 0 .106-.05.691.691 0 0 0 .087-.751.138.138 0 0 0-.194-.033z"/>
+                            </svg>
+                        </div>
+                        <h3>Postman</h3>
+                    </div>
+                    <p class="tool-description">Ferramenta essencial para testar APIs e requisições HTTP durante o desenvolvimento.</p>
+                    <ul class="tool-features">
+                        <li>Testar APIs REST</li>
+                        <li>Documentação de APIs</li>
+                        <li>Coleções e ambientes</li>
+                        <li>Testes automatizados</li>
+                    </ul>
+                    <div class="tool-footer">
+                        <span class="tool-tag">Gratuito/Pago</span>
+                        <span class="tool-tag">Web/Desktop</span>
+                    </div>
+                    <a href="https://www.postman.com/" target="_blank" class="tool-btn">Download</a>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon docker">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/>
+                            </svg>
+                        </div>
+                        <h3>Docker</h3>
+                    </div>
+                    <p class="tool-description">Containerização para rodar aplicações de forma isolada e portável em qualquer ambiente.</p>
+                    <ul class="tool-features">
+                        <li>Containers isolados</li>
+                        <li>Ambiente consistente</li>
+                        <li>Deploy simplificado</li>
+                        <li>Microserviços</li>
+                    </ul>
+                    <div class="tool-footer">
+                        <span class="tool-tag">Gratuito</span>
+                        <span class="tool-tag">Windows/Mac/Linux</span>
+                    </div>
+                    <a href="https://www.docker.com/" target="_blank" class="tool-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Cursos <span class="gradient-text">Gratuitos</span></h2>
+            <p class="section-subtitle">Aprenda programação com os melhores cursos gratuitos disponíveis na web</p>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">freeCodeCamp</span>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p class="course-description">Aprenda HTML, CSS, Flexbox, Grid e design responsivo construindo projetos práticos.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>300 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>2M+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">HTML</span>
+                        <span class="topic-tag">CSS</span>
+                        <span class="topic-tag">Projetos</span>
+                    </div>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">freeCodeCamp</span>
+                    </div>
+                    <h3>JavaScript Algorithms</h3>
+                    <p class="course-description">Domine JavaScript com algoritmos, estruturas de dados e projetos do mundo real.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>300 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>1.8M+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">JavaScript</span>
+                        <span class="topic-tag">Algoritmos</span>
+                        <span class="topic-tag">ES6</span>
+                    </div>
+                    <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">Codecademy</span>
+                    </div>
+                    <h3>Learn Python 3</h3>
+                    <p class="course-description">Curso completo de Python do zero, perfeito para iniciantes absolutos em programação.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>25 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>5M+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Python</span>
+                        <span class="topic-tag">Básico</span>
+                        <span class="topic-tag">Interativo</span>
+                    </div>
+                    <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">CS50</span>
+                    </div>
+                    <h3>CS50: Intro to Computer Science</h3>
+                    <p class="course-description">Curso de Harvard sobre fundamentos de ciência da computação e programação.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>100 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>4M+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">C</span>
+                        <span class="topic-tag">Python</span>
+                        <span class="topic-tag">Harvard</span>
+                    </div>
+                    <a href="https://cs50.harvard.edu/x/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">The Odin Project</span>
+                    </div>
+                    <h3>Full Stack JavaScript</h3>
+                    <p class="course-description">Torne-se um desenvolvedor full stack com JavaScript, Node.js, React e muito mais.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>1000+ horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>500K+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Full Stack</span>
+                        <span class="topic-tag">JavaScript</span>
+                        <span class="topic-tag">React</span>
+                    </div>
+                    <a href="https://www.theodinproject.com/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">Curso em Vídeo</span>
+                    </div>
+                    <h3>Python 3 - Mundo 1, 2 e 3</h3>
+                    <p class="course-description">Curso completo de Python em português do professor Gustavo Guanabara.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>120 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>2M+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Python</span>
+                        <span class="topic-tag">Português</span>
+                        <span class="topic-tag">Vídeos</span>
+                    </div>
+                    <a href="https://www.cursoemvideo.com/curso/python-3-mundo-1/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">Udemy</span>
+                    </div>
+                    <h3>Web Development Bootcamp</h3>
+                    <p class="course-description">Bootcamp completo gratuito sobre desenvolvimento web moderno.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>60 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>800K+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">HTML/CSS</span>
+                        <span class="topic-tag">JavaScript</span>
+                        <span class="topic-tag">Bootstrap</span>
+                    </div>
+                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">Microsoft Learn</span>
+                    </div>
+                    <h3>Fundamentos do C#</h3>
+                    <p class="course-description">Aprenda C# desde o básico até conceitos avançados com a Microsoft.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>35 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>300K+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">C#</span>
+                        <span class="topic-tag">.NET</span>
+                        <span class="topic-tag">Microsoft</span>
+                    </div>
+                    <a href="https://learn.microsoft.com/pt-br/training/paths/get-started-c-sharp-part-1/" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">100% Gratuito</div>
+                    <div class="course-platform">
+                        <span class="platform-name">Scrimba</span>
+                    </div>
+                    <h3>Learn React for Free</h3>
+                    <p class="course-description">Curso interativo de React com Bob Ziroll, professor top-rated da Scrimba.</p>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>5 horas</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>1M+ alunos</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">React</span>
+                        <span class="topic-tag">Hooks</span>
+                        <span class="topic-tag">Interativo</span>
+                    </div>
+                    <a href="https://scrimba.com/learn/learnreact" target="_blank" class="course-btn">Acessar Curso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <h2 class="section-title">Seu <span class="gradient-text">Roadmap</span> de Aprendizado</h2>
+            <p class="section-subtitle">Siga um caminho estruturado do iniciante ao profissional</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">1</div>
+                    <div class="timeline-content">
+                        <h3>Fundamentos</h3>
+                        <p>Aprenda lógica de programação, variáveis, estruturas de controle e funções</p>
+                        <ul class="timeline-list">
+                            <li>Lógica de Programação</li>
+                            <li>Tipos de Dados</li>
+                            <li>Estruturas de Controle</li>
+                            <li>Funções e Métodos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">2</div>
+                    <div class="timeline-content">
+                        <h3>Estruturas de Dados</h3>
+                        <p>Domine arrays, listas, pilhas, filas e outras estruturas essenciais</p>
+                        <ul class="timeline-list">
+                            <li>Arrays e Listas</li>
+                            <li>Pilhas e Filas</li>
+                            <li>Árvores e Grafos</li>
+                            <li>Hash Tables</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">3</div>
+                    <div class="timeline-content">
+                        <h3>Programação Orientada a Objetos</h3>
+                        <p>Entenda classes, objetos, herança e os pilares da POO</p>
+                        <ul class="timeline-list">
+                            <li>Classes e Objetos</li>
+                            <li>Herança e Polimorfismo</li>
+                            <li>Encapsulamento</li>
+                            <li>Abstração</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">4</div>
+                    <div class="timeline-content">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Crie aplicações web completas com frontend e backend</p>
+                        <ul class="timeline-list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Frameworks Frontend</li>
+                            <li>APIs e Backend</li>
+                            <li>Banco de Dados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">5</div>
+                    <div class="timeline-content">
+                        <h3>Projetos e Portfólio</h3>
+                        <p>Construa projetos reais e destaque-se no mercado</p>
+                        <ul class="timeline-list">
+                            <li>Projetos Pessoais</li>
+                            <li>Open Source</li>
+                            <li>Portfólio Online</li>
+                            <li>GitHub e LinkedIn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Recursos <span class="gradient-text">Gratuitos</span></h2>
+            <p class="section-subtitle">Ferramentas e plataformas para acelerar seu aprendizado</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Cursos Online</h3>
+                    <p>Plataformas com milhares de cursos gratuitos e certificados</p>
+                    <ul>
+                        <li>freeCodeCamp</li>
+                        <li>Codecademy</li>
+                        <li>Coursera</li>
+                        <li>Udemy (Gratuitos)</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Editores de Código</h3>
+                    <p>IDEs e editores profissionais para escrever código</p>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Sublime Text</li>
+                        <li>Atom</li>
+                        <li>JetBrains IDEs</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16v-4M12 8h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Documentação</h3>
+                    <p>Referências oficiais e guias completos</p>
+                    <ul>
+                        <li>MDN Web Docs</li>
+                        <li>W3Schools</li>
+                        <li>DevDocs</li>
+                        <li>Stack Overflow</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Comunidades</h3>
+                    <p>Conecte-se com outros desenvolvedores</p>
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Discord de Programação</li>
+                        <li>Reddit r/learnprogramming</li>
+                        <li>Dev.to</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Desafios de Código</h3>
+                    <p>Pratique e melhore suas habilidades</p>
+                    <ul>
+                        <li>LeetCode</li>
+                        <li>HackerRank</li>
+                        <li>Codewars</li>
+                        <li>Exercism</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>YouTube Channels</h3>
+                    <p>Aprenda com vídeos e tutoriais</p>
+                    <ul>
+                        <li>Traversy Media</li>
+                        <li>The Net Ninja</li>
+                        <li>Fireship</li>
+                        <li>Programming with Mosh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="community">
+        <div class="container">
+            <div class="community-content">
+                <h2 class="section-title">Junte-se à <span class="gradient-text">Comunidade</span></h2>
+                <p class="section-subtitle">Faça parte de uma comunidade de milhares de estudantes apaixonados por programação</p>
+                
+                <div class="community-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Suporte 24/7</h3>
+                        <p>Tire suas dúvidas a qualquer hora com mentores e colegas</p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Networking</h3>
+                        <p>Conecte-se com profissionais e encontre oportunidades</p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Projetos em Grupo</h3>
+                        <p>Colabore em projetos reais e construa seu portfólio</p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Eventos e Workshops</h3>
+                        <p>Participe de eventos online e aprenda com especialistas</p>
+                    </div>
+                </div>
+
+                <div class="newsletter">
+                    <h3>Receba dicas semanais</h3>
+                    <p>Inscreva-se e receba conteúdos exclusivos, dicas e novidades</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                        <button type="submit" class="btn btn-primary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="code-symbol">&lt;/&gt;</span>
+                        <span class="logo-text">CodeStart</span>
+                    </div>
+                    <p>Transformando iniciantes em desenvolvedores profissionais.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Aprender</h4>
+                    <ul>
+                        <li><a href="#">Tutoriais</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Desafios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Ferramentas</a></li>
+                        <li><a href="#">Guias</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeStart. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="languageModal" class="modal">
+        <div class="modal-overlay" onclick="closeLanguageModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeLanguageModal()">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
